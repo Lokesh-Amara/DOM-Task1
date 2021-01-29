@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body id="mainbody">
+    <script>
+        var maindiv = document.createElement('div')
+        maindiv.style.marginLeft = '100px'
+        maindiv.style.marginRight = '100px'
+
+
+        var div1 = document.createElement('div')
+        div1.style.height = '410px'
+        div1.style.backgroundColor = 'rgb(83, 83, 83)'
+
+        var img1 = document.createElement('img')
+        img1.setAttribute('src', 'man.jpg')
+        img1.style.width = '250px'
+        img1.style.height = '250px'
+        img1.style.borderRadius = '200px'
+        img1.style.border = '7px solid yellow'
+        img1.style.borderStyle = 'dotted'
+        img1.style.position = 'relative'
+        img1.style.top = '50px'
+        img1.style.left = '450px'
+
+        div1.append(img1)
+
+        var div2=document.createElement('div')
+        div2.style.backgroundColor = 'rgb(233, 233, 233)'
+        div2.style.height = '45px'
+        div2.style.position = 'relative'
+        div2.style.top = '50px'
+
+        div1.append(div2)
+
+        var div3 = document.createElement('div')
+        div3.innerHTML = "&nbsp; BRIAN DUDEY"
+        div3.style.backgroundColor = 'goldenrod'
+        div3.style.height = '100px'
+        div3.style.position = 'relative'
+        div3.style.marginLeft = '300px'
+        div3.style.marginRight = '300px'
+        div3.style.bottom = '30px'
+        div3.style.borderRadius = '10px'
+        div3.style.color = 'black'
+        div3.style.fontSize = '70px'
+        div3.style.fontFamily = 'sans-serif'
+        div3.style.paddingTop = '20px'
+
+        div1.append(div3)
+
+        maindiv.append(div1)
+
+        var div4 = document.createElement('div')
+        div4.style.borderBottom = '1px solid grey'
+        
+
+        var p1 = document.createElement('p')
+        p1.innerText = ' N. Damen Avenue, Chicago 99999 | 999-999-9999 | hellokick@resume.com | www.kickresume.com'
+        p1.style.fontSize = '22px'
+        p1.style.marginbottom = '0px'
+        p1.style.marginTop = '15px'
+        p1.style.position = 'relative'
+        p1.style.left = '90px'
+        p1.style.fontFamily = 'sans-serif'
+        p1.style.paddingBottom= '10px'
+        
+        div4.append(p1)
+
+        maindiv.append(div4)
+
+        var div5 = document.createElement('div')
+        div5.style.display = 'inline-block'
+        div5.style.width = '450px'
+        div5.style.paddingRight ='50px'
+        div5.style.marginLeft = '50px'
+        div5.style.borderRight = '2px solid grey'
+        div5.style.marginTop= '50px'
+
+        var leftdiv1 = document.createElement('div')
+        leftdiv1.style.paddingBottom = '15px'
+
+        var img2 = document.createElement('img')
+        img2.setAttribute('src', 'frty.png')
+        img2.style.height = '30px'
+        img2.style.borderRadius = '100px'
+        img2.style.padding = '5px'
+        img2.style.borderWidth = '3px'
+        img2.style.borderColor = 'yellow'
+        img2.style.borderStyle = 'dotted'
+        img2.style.backgroundColor = '#585a5a'
+
+        leftdiv1.append(img2)
+
+        var h2 = document.createElement('h2')
+        h2.innerText = 'Profile'
+        h2.style.display = 'inline-block';
+        h2.style.position = 'relative'
+        h2.style.bottom = '8px'
+        h2.style.fontSize = '30px'
+        h2.style.left = '10px'
+        h2.style.fontFamily = 'sans-serif'
+        h2.style.margin = '10px 0px'
+
+        leftdiv1.append(h2)
+
+        var lePa = document.createElement('p')
+        lePa.innerText = 'Innovative optimised solution seeker. Excited to be at the development phase of my new career as a web developer. I am ambitious, adventurous, assiduous, animated and an advocate.'
+        lePa.style.marginTop = '0px'
+        lePa.style.fontFamily = 'sans-serif'
+        lePa.style.fontWeight = '500'
+        lePa.style.fontSize = '20px'
+
+        leftdiv1.append(lePa)
+
+        div5.append(leftdiv1)
+
+        var leftdiv2 = document.createElement('div')
+
+        var img3 = document.createElement('img')
+        img3.setAttribute('src', 'frty.png')
+        img3.style.height = '30px'
+        img3.style.borderRadius ='100px'
+        img3.style.padding = '5px'
+        img3.style.border = '3px solid yellow'
+        img3.style.borderStyle = 'dotted'
+        img3.style.backgroundColor = '#585a5a'
+
+        leftdiv2.append(img3)
+
+        var l2h2 = document.createElement('h2')
+        l2h2.innerText = 'Skills'
+        l2h2.style.display = 'inline-block'
+        l2h2.style.position = 'relative'
+        l2h2.style.bottom = '8px'
+        l2h2.style.fontSize = '30px'
+        l2h2.style.left = '10px'
+        l2h2.style.fontFamily = 'sans-serif'
+        l2h2.style.margin = '10px 0px'
+
+        leftdiv2.append(l2h2)
+
+        var l2h3 = document.createElement('h3')
+        l2h3.innerText = 'Technical skills'
+        l2h3.style.textAlign = 'center'
+        l2h3.style.fontSize = '20px'
+        l2h3.style.margin = '10px 0px'
+
+        leftdiv2.append(l2h3)
+
+        var lp1 = document.createElement('p')
+        lp1.innerHTML = 'Java Script &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp &nbsp &nbsp &nbsp <input type="range" min="0" max="100" value="80">'
+        lp1.style.marginTop = '0px'
+        lp1.style.fontFamily = 'sans-serif'
+        lp1.style.fontWeight = '500'
+        lp1.style.fontSize = '20px'
+
+        leftdiv2.append(lp1)
+
+        var lp2 = document.createElement('p')
+        lp2.innerHTML = ' CSS  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="range" min="0" max="100" value="60">'
+        lp2.style.marginTop = '0px'
+        lp2.style.fontFamily = 'sans-serif'
+        lp2.style.fontWeight = '500'
+        lp2.style.fontSize = '20px'
+
+        leftdiv2.append(lp2)
+
+        var lp3 = document.createElement('p')
+        lp3.innerHTML = 'HTML &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="range" min="0" max="100" value="60">'
+        lp3.style.marginTop = '0px'
+        lp3.style.fontFamily = 'sans-serif'
+        lp3.style.fontWeight = '500'
+        lp3.style.fontSize = '20px'
+
+        leftdiv2.append(lp3)
+
+        var l2he = document.createElement('h3')
+        l2he.innerText = 'Additional skills'
+        l2he.style.textAlign = 'center'
+        l2he.style.fontSize = '20px'
+        l2he.style.margin = '10px 0px'
+
+        leftdiv2.append(l2he)
+
+        var lp4 = document.createElement('p')
+        lp4.innerHTML = 'Team Leader &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="range" min="0" max="100" value="60">'
+        lp4.style.marginTop = '0px'
+        lp4.style.fontFamily = 'sans-serif'
+        lp4.style.fontWeight = '500'
+        lp4.style.fontSize = '20px'
+
+        leftdiv2.append(lp4)
+
+        var lp5 = document.createElement('p')
+        lp5.innerHTML = ' Mentoring  &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="range" min="0" max="100" value="90">'
+        lp5.style.marginTop = '0px'
+        lp5.style.fontFamily = 'sans-serif'
+        lp5.style.fontWeight = '500'
+        lp5.style.fontSize = '20px'
+
+        leftdiv2.append(lp5)
+
+        var lp6 = document.createElement('p')
+        lp6.innerHTML = 'Management  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input type="range" min="0" max="100" value="70">'
+        lp6.style.marginTop = '0px'
+        lp6.style.fontFamily = 'sans-serif'
+        lp6.style.fontWeight = '500'
+        lp6.style.fontSize = '20px'
+
+        leftdiv2.append(lp6)
+
+        div5.append(leftdiv2)
+
+        var leftdiv3 = document.createElement('div')
+        leftdiv3.style.paddingBottom = '15px'
+
+        var img4 = document.createElement('img')
+        img4.setAttribute('src', 'frty.png')
+        img4.style.height = '30px'
+        img4.style.borderRadius ='100px'
+        img4.style.padding = '5px'
+        img4.style.border = '3px solid yellow'
+        img4.style.borderStyle = 'dotted'
+        img4.style.backgroundColor = '#585a5a'
+
+        leftdiv3.append(img4)
+
+        var lh = document.createElement('h2')
+        lh.innerText = 'Work Experience'
+        lh.style.display = 'inline-block'
+        lh.style.position = 'relative'
+        lh.style.bottom = '8px'
+        lh.style.fontSize = '30px'
+        lh.style.left = '10px'
+        lh.style.fontFamily = 'sans-serif'
+        lh.style.margin = '10px 0px'
+
+        leftdiv3.append(lh)
+
+        var levent = document.createElement('h3')
+        levent.innerText = 'Event Manager'
+        levent.style.display = 'inline-block'
+        levent.style.textAlign = 'left'
+        levent.style.width = '200px'
+        levent.style.fontSize = '20px'
+        levent.style.fontWeight = 'bolder'
+        levent.style.margin = '0px'
+
+        leftdiv3.append(levent)
+
+        var levent3 = document.createElement('h3')
+        levent3.innerText = '03/2018 - 08/2019'
+        levent3.style.display = 'inline-block'
+        levent3.style.textAlign = 'right'
+        levent3.style.margin = '0px'
+
+        leftdiv3.append(levent3)
+
+        var unli = document.createElement('ul')
+
+        var inli1 = document.createElement('li')
+        inli1.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inli1.style.fontSize = '17px'
+
+        unli.append(inli1)
+
+        var inli2 = document.createElement('li')
+        inli2.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inli2.style.fontSize = '17px'
+
+        unli.append(inli2)
+
+        var inli3 = document.createElement('li')
+        inli3.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inli3.style.fontSize = '17px'
+
+        unli.append(inli3)
+
+        leftdiv3.append(unli)
+
+        div5.append(leftdiv3)
+
+        maindiv.append(div5)
+
+        var div6 = document.createElement('div')
+        div6.style.display = 'inline-block'
+        div6.style.width = '490px'
+        div6.style.marginLeft = '20px'
+        div6.style.paddingLeft = '10px'
+        div6.style.marginRight = '50px'
+        div6.style.marginTop = '50px'
+
+        var rdiv1 = document.createElement('div')
+        rdiv1.style.paddingBottom = '15px'
+
+        var img5 = document.createElement('img')
+        img5.setAttribute('src', 'frty.png')
+        img5.style.height = '30px'
+        img5.style.borderRadius ='100px'
+        img5.style.padding = '5px'
+        img5.style.border = '3px solid yellow'
+        img5.style.borderStyle = 'dotted'
+        img5.style.backgroundColor = '#585a5a'
+
+        rdiv1.append(img5)
+
+        var rh1 = document.createElement('h2')
+        rh1.innerText = 'Work Experience'
+        rh1.style.display = 'inline-block'
+        rh1.style.position = 'relative'
+        rh1.style.bottom = '8px'
+        rh1.style.fontSize = '30px'
+        rh1.style.left = '10px'
+        rh1.style.fontFamily = 'sans-serif'
+        rh1.style.margin = '10px 0px'
+
+        rdiv1.append(rh1)
+
+        var reve1 = document.createElement('h3')
+        reve1.innerText = 'Application Developer'
+        reve1.style.display = 'inline-block'
+        reve1.style.textAlign = 'left'
+        reve1.style.width = '300px'
+        reve1.style.fontSize = '20px'
+        reve1.style.fontWeight = 'bolder'
+        reve1.style.margin = '0px'
+
+
+        rdiv1.append(reve1)
+
+        var reve2 = document.createElement('h3')
+        reve2.innerText = '03/2018 - 08/2019'
+        reve2.style.display = 'inline-block'
+        reve2.style.textAlign = 'right'
+        reve2.style.margin = '0px'
+
+        rdiv1.append(reve2)
+
+        var unli2 = document.createElement('ul')
+
+        var inlin1 = document.createElement('li')
+        inlin1.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inlin1.style.fontSize = '17px'
+
+        unli2.append(inlin1)
+
+        var inlin2 = document.createElement('li')
+        inlin2.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inlin2.style.fontSize = '17px'
+
+        unli2.append(inlin2)
+
+        var inlin3 = document.createElement('li')
+        inlin3.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inlin3.style.fontSize = '17px'
+
+        unli2.append(inlin3)
+
+        rdiv1.append(unli2)
+
+        div6.append(rdiv1)
+
+        var rdiv2 = document.createElement('div')
+        rdiv2.style.paddingBottom = '15px'
+
+        var img6 = document.createElement('img')
+        img6.setAttribute('src', 'frty.png')
+        img6.style.height = '30px'
+        img6.style.borderRadius ='100px'
+        img6.style.padding = '5px'
+        img6.style.border = '3px solid yellow'
+        img6.style.borderStyle = 'dotted'
+        img6.style.backgroundColor = '#585a5a'
+
+        rdiv2.append(img6)
+
+        var rrh = document.createElement('h2')
+        rrh.innerText = 'Education'
+        rrh.style.display = 'inline-block'
+        rrh.style.position = 'relative'
+        rrh.style.bottom = '8px'
+        rrh.style.fontSize = '30px'
+        rrh.style.left = '10px'
+        rrh.style.fontFamily = 'sans-serif'
+        rrh.style.margin = '10px 0px'
+
+        rdiv2.append(rrh)
+
+        var re1 = document.createElement('h3')
+        re1.innerText = 'Engineering'
+        re1.style.display = 'inline-block'
+        re1.style.textAlign = 'left'
+        re1.style.width = '300px'
+        re1.style.fontSize = '20px'
+        re1.style.fontWeight = 'bolder'
+        re1.style.margin = '0px'
+
+        rdiv2.append(re1)
+
+        var re2 = document.createElement('h3')
+        re2.innerText = '03/2018 - 08/2019'
+        re2.style.display = 'inline-block'
+        re2.style.textAlign = 'right'
+        re2.style.margin = '0px'
+
+        rdiv2.append(re2)
+
+        var unli3 = document.createElement('ul')
+
+        var inline1 = document.createElement('li')
+        inline1.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inline1.style.fontSize = '17px'
+
+        unli3.append(inline1)
+
+        var inline2 = document.createElement('li')
+        inline2.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inline2.style.fontSize = '17px'
+
+        unli3.append(inline2)
+
+        var inline3 = document.createElement('li')
+        inline3.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inline3.style.fontSize = '17px'
+
+        unli3.append(inline3)
+
+        var inline4 = document.createElement('li')
+        inline4.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inline4.style.fontSize = '17px'
+
+        unli3.append(inline4)
+
+        var inline5 = document.createElement('li')
+        inline5.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam aspernatur maxime placeat numquam sapiente optio, sed quisquam corrupti eaque aut debitis tempora!'
+        inline5.style.fontSize = '17px'
+
+        unli3.append(inline5)
+
+        var inline6 = document.createElement('li')
+        inline6.innerText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius rerum atque aperiam velit nihil ea quibusdam'
+        inline6.style.fontSize = '17px'
+
+        unli3.append(inline6)
+
+        rdiv2.append(unli3)
+
+        div6.append(rdiv2)
+
+        maindiv.append(div6)
+        document.body.append(maindiv)
+    </script> 
+    
+</body>
+</html>
